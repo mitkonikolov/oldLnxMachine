@@ -1,0 +1,2 @@
+collatz-ivec-sys	collatz_list_sys	collatz_ivec_nu		collatz_list_nu	 collatz_ivec_par	collatz_list_par
+0.8 s			1.5s			4.3s			5.6s			0.75			1.13

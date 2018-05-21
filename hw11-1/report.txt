@@ -1,0 +1,44 @@
+Authors:
+Viviano Cantu & Mitko Nikolov
+Submissions are identical
+
+OS:	Ubuntu 16.10 x86_64
+CPU:	Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+RAM	4GB
+
+Strategy:
+Our strategy was to implement an allocator similar to Google's
+TC Malloc. We started out with big chunk allocation and called
+this every time we needed memory. Then everytime we needed
+memory we classified it into a size class. For example we 
+classified every number from 1-8 in the 8 class size.
+The class sizes where spread out by 8 at first then by 128
+when they were too big.
+Once we have the class we grab a chunk from the main
+chunk (which is shared memory) and place it into thread local
+memory. We then split this chunk into a list of class_size
+blocks. This first call is a bit costly but next time somone
+asks for a block of that size the thread runs without being blocked.
+When we need to free we get the block's size, determine it's class
+and return it to the list of that class size.
+
+Results:
+		ivec	list
+nu		4.3s	5.6s
+sys		0.8s	1.5s
+par		0.75	1.2
+
+Result Analysis:
+Based on our results we determined that the System Allocator was 
+faster than the hw06 allocator and our implementation of tc_malloc
+was faster than the System allocator. The tests where run on multiple
+threads so the hw06 allocator would suffer the most from this.
+The hw06 allocator blocks all of the other threads when it needs to do
+any sort of call. Makes it significantly slower than the other allocators
+because it does not run in parallele to the other threads.
+Our tc_malloc allocator slightly faster than the system allocator because
+the way we store free lists in the thread local cache we can allocate memory 
+without having to block threads at all. Additionally, we optimized our
+memory allocator to better be faster when calling many small numbers. This
+means that for collatz-list-par we were faster than the system allocator. 
+

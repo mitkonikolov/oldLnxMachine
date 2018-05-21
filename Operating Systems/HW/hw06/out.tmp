@@ -1,0 +1,599 @@
+p is not NULL
+p's size is 65536
+real size is 1444
+extra-memory's size is 0
+curr memory's size is 65536
+newCell's size is 1444
+next's size is 64092
+p is not NULL
+p's size is 65536
+real size is 2688
+extra-memory's size is 0
+curr memory's size is 65536
+p is not NULL
+p's size is 62848
+real size is 3292
+extra-memory's size is 0
+curr memory's size is 62848
+p is not NULL
+p's size is 2688
+real size is 448
+extra-memory's size is 485331304560
+curr memory's size is 2688
+p is not NULL
+p's size is 2240
+real size is 156
+extra-memory's size is 652835029143
+curr memory's size is 2240
+newCell's size is 3292
+next's size is 59556
+newCell's size is 62848
+prev's size is 2084
+p is not NULL
+p's size is 64932
+real size is 1060
+extra-memory's size is 1791001362848
+curr memory's size is 64932
+p is not NULL
+p's size is 63872
+real size is 3348
+extra-memory's size is 2503965934150
+curr memory's size is 63872
+p is not NULL
+p's size is 448
+real size is 1960
+p is not NULL
+p's size is 65536
+real size is 1960
+extra-memory's size is 0
+curr memory's size is 65536
+p is not NULL
+p's size is 63576
+real size is 400
+extra-memory's size is 0
+curr memory's size is 63576
+p is not NULL
+p's size is 63176
+real size is 1424
+extra-memory's size is 0
+curr memory's size is 63176
+p is not NULL
+p's size is 61752
+real size is 1864
+extra-memory's size is 0
+curr memory's size is 61752
+newCell's size is 1060
+prev's size is 156
+p is not NULL
+p's size is 59888
+real size is 1868
+extra-memory's size is 0
+curr memory's size is 59888
+p is not NULL
+p's size is 58020
+real size is 4020
+extra-memory's size is 0
+curr memory's size is 58020
+newCell's size is 3348
+prev's size is 1216
+p is not NULL
+p's size is 54000
+real size is 2172
+extra-memory's size is 0
+curr memory's size is 54000
+p is not NULL
+p's size is 51828
+real size is 3596
+extra-memory's size is 0
+curr memory's size is 51828
+p is not NULL
+p's size is 1960
+real size is 952
+extra-memory's size is 1052266987764
+curr memory's size is 1960
+p is not NULL
+p's size is 1008
+real size is 2132
+p is not NULL
+p's size is 65536
+real size is 2132
+extra-memory's size is 0
+curr memory's size is 65536
+p is not NULL
+p's size is 63404
+real size is 3236
+extra-memory's size is 0
+curr memory's size is 63404
+p is not NULL
+p's size is 60168
+real size is 1636
+extra-memory's size is 0
+curr memory's size is 60168
+newCell's size is 1424
+prev's size is 400
+p is not NULL
+p's size is 58532
+real size is 708
+extra-memory's size is 0
+curr memory's size is 58532
+p is not NULL
+p's size is 57824
+real size is 920
+extra-memory's size is 0
+curr memory's size is 57824
+newCell's size is 1864
+prev's size is 1824
+p is not NULL
+p's size is 56904
+real size is 624
+extra-memory's size is 0
+curr memory's size is 56904
+p is not NULL
+p's size is 56280
+real size is 1984
+extra-memory's size is 0
+curr memory's size is 56280
+newCell's size is 1868
+prev's size is 3688
+p is not NULL
+p's size is 54296
+real size is 3036
+extra-memory's size is 0
+curr memory's size is 54296
+p is not NULL
+p's size is 51260
+real size is 4088
+extra-memory's size is 0
+curr memory's size is 51260
+newCell's size is 4020
+prev's size is 5556
+p is not NULL
+p's size is 47172
+real size is 364
+extra-memory's size is 0
+curr memory's size is 47172
+p is not NULL
+p's size is 46808
+real size is 256
+extra-memory's size is 0
+curr memory's size is 46808
+newCell's size is 2172
+prev's size is 9576
+p is not NULL
+p's size is 46552
+real size is 1300
+extra-memory's size is 0
+curr memory's size is 46552
+p is not NULL
+p's size is 45252
+real size is 1452
+extra-memory's size is 0
+curr memory's size is 45252
+newCell's size is 3596
+prev's size is 11748
+p is not NULL
+p's size is 43800
+real size is 1192
+extra-memory's size is 0
+curr memory's size is 43800
+p is not NULL
+p's size is 42608
+real size is 2288
+extra-memory's size is 0
+curr memory's size is 42608
+newCell's size is 952
+prev's size is 40320
+p is not NULL
+p's size is 41272
+real size is 3548
+extra-memory's size is 0
+curr memory's size is 41272
+p is not NULL
+p's size is 37724
+real size is 2356
+extra-memory's size is 0
+curr memory's size is 37724
+p is not NULL
+p's size is 2132
+real size is 2572
+p is not NULL
+p's size is 65536
+real size is 2572
+extra-memory's size is 0
+curr memory's size is 65536
+p is not NULL
+p's size is 62964
+real size is 608
+extra-memory's size is 0
+curr memory's size is 62964
+p is not NULL
+p's size is 62356
+real size is 2096
+extra-memory's size is 0
+curr memory's size is 62356
+p is not NULL
+p's size is 60260
+real size is 1740
+extra-memory's size is 0
+curr memory's size is 60260
+p is not NULL
+p's size is 58520
+real size is 2180
+extra-memory's size is 0
+curr memory's size is 58520
+p is not NULL
+p's size is 56340
+real size is 2608
+extra-memory's size is 0
+curr memory's size is 56340
+p is not NULL
+p's size is 53732
+real size is 552
+extra-memory's size is 0
+curr memory's size is 53732
+p is not NULL
+p's size is 53180
+real size is 868
+extra-memory's size is 0
+curr memory's size is 53180
+p is not NULL
+p's size is 52312
+real size is 124
+extra-memory's size is 0
+curr memory's size is 52312
+p is not NULL
+p's size is 52188
+real size is 408
+extra-memory's size is 0
+curr memory's size is 52188
+p is not NULL
+p's size is 51780
+real size is 1772
+extra-memory's size is 0
+curr memory's size is 51780
+p is not NULL
+p's size is 50008
+real size is 1824
+extra-memory's size is 0
+curr memory's size is 50008
+p is not NULL
+p's size is 48184
+real size is 468
+extra-memory's size is 0
+curr memory's size is 48184
+p is not NULL
+p's size is 47716
+real size is 3708
+extra-memory's size is 0
+curr memory's size is 47716
+p is not NULL
+p's size is 44008
+real size is 1112
+extra-memory's size is 0
+curr memory's size is 44008
+p is not NULL
+p's size is 42896
+real size is 2740
+extra-memory's size is 0
+curr memory's size is 42896
+p is not NULL
+p's size is 40156
+real size is 56
+extra-memory's size is 0
+curr memory's size is 40156
+p is not NULL
+p's size is 40100
+real size is 1340
+extra-memory's size is 0
+curr memory's size is 40100
+p is not NULL
+p's size is 38760
+real size is 3092
+extra-memory's size is 0
+curr memory's size is 38760
+p is not NULL
+p's size is 35668
+real size is 2472
+extra-memory's size is 0
+curr memory's size is 35668
+p is not NULL
+p's size is 33196
+real size is 1932
+extra-memory's size is 0
+curr memory's size is 33196
+p is not NULL
+p's size is 31264
+real size is 3048
+extra-memory's size is 0
+curr memory's size is 31264
+p is not NULL
+p's size is 28216
+real size is 1004
+extra-memory's size is 0
+curr memory's size is 28216
+p is not NULL
+p's size is 27212
+real size is 2732
+extra-memory's size is 0
+curr memory's size is 27212
+p is not NULL
+p's size is 24480
+real size is 3100
+extra-memory's size is 0
+curr memory's size is 24480
+p is not NULL
+p's size is 21380
+real size is 3572
+extra-memory's size is 0
+curr memory's size is 21380
+p is not NULL
+p's size is 17808
+real size is 424
+extra-memory's size is 0
+curr memory's size is 17808
+p is not NULL
+p's size is 17384
+real size is 2908
+extra-memory's size is 0
+curr memory's size is 17384
+p is not NULL
+p's size is 14476
+real size is 3924
+extra-memory's size is 0
+curr memory's size is 14476
+p is not NULL
+p's size is 10552
+real size is 2484
+extra-memory's size is 0
+curr memory's size is 10552
+p is not NULL
+p's size is 8068
+real size is 2200
+extra-memory's size is 0
+curr memory's size is 8068
+p is not NULL
+p's size is 5868
+real size is 1960
+extra-memory's size is 0
+curr memory's size is 5868
+p is not NULL
+p's size is 3908
+real size is 3020
+extra-memory's size is 0
+curr memory's size is 3908
+p is not NULL
+p's size is 888
+real size is 248
+extra-memory's size is 0
+curr memory's size is 888
+p is not NULL
+p's size is 640
+real size is 3824
+p is not NULL
+p's size is 65536
+real size is 3824
+extra-memory's size is 0
+curr memory's size is 65536
+p is not NULL
+p's size is 61712
+real size is 2820
+extra-memory's size is 0
+curr memory's size is 61712
+p is not NULL
+p's size is 58892
+real size is 272
+extra-memory's size is 0
+curr memory's size is 58892
+p is not NULL
+p's size is 58620
+real size is 3492
+extra-memory's size is 0
+curr memory's size is 58620
+p is not NULL
+p's size is 55128
+real size is 444
+extra-memory's size is 0
+curr memory's size is 55128
+p is not NULL
+p's size is 54684
+real size is 2784
+extra-memory's size is 0
+curr memory's size is 54684
+p is not NULL
+p's size is 51900
+real size is 136
+extra-memory's size is 0
+curr memory's size is 51900
+p is not NULL
+p's size is 51764
+real size is 488
+extra-memory's size is 0
+curr memory's size is 51764
+p is not NULL
+p's size is 51276
+real size is 1708
+extra-memory's size is 0
+curr memory's size is 51276
+p is not NULL
+p's size is 49568
+real size is 3816
+extra-memory's size is 0
+curr memory's size is 49568
+p is not NULL
+p's size is 45752
+real size is 1624
+extra-memory's size is 0
+curr memory's size is 45752
+p is not NULL
+p's size is 44128
+real size is 1292
+extra-memory's size is 0
+curr memory's size is 44128
+p is not NULL
+p's size is 42836
+real size is 1536
+extra-memory's size is 0
+curr memory's size is 42836
+p is not NULL
+p's size is 41300
+real size is 2088
+extra-memory's size is 0
+curr memory's size is 41300
+p is not NULL
+p's size is 39212
+real size is 2732
+extra-memory's size is 0
+curr memory's size is 39212
+p is not NULL
+p's size is 36480
+real size is 1920
+extra-memory's size is 0
+curr memory's size is 36480
+p is not NULL
+p's size is 34560
+real size is 36
+extra-memory's size is 0
+curr memory's size is 34560
+p is not NULL
+p's size is 34524
+real size is 1612
+extra-memory's size is 0
+curr memory's size is 34524
+p is not NULL
+p's size is 32912
+real size is 1940
+extra-memory's size is 0
+curr memory's size is 32912
+p is not NULL
+p's size is 30972
+real size is 1068
+extra-memory's size is 0
+curr memory's size is 30972
+p is not NULL
+p's size is 29904
+real size is 1996
+extra-memory's size is 0
+curr memory's size is 29904
+p is not NULL
+p's size is 27908
+real size is 1808
+extra-memory's size is 0
+curr memory's size is 27908
+p is not NULL
+p's size is 26100
+real size is 1884
+extra-memory's size is 0
+curr memory's size is 26100
+p is not NULL
+p's size is 24216
+real size is 1400
+extra-memory's size is 0
+curr memory's size is 24216
+p is not NULL
+p's size is 22816
+real size is 3888
+extra-memory's size is 0
+curr memory's size is 22816
+p is not NULL
+p's size is 18928
+real size is 1096
+extra-memory's size is 0
+curr memory's size is 18928
+p is not NULL
+p's size is 17832
+real size is 224
+extra-memory's size is 0
+curr memory's size is 17832
+p is not NULL
+p's size is 17608
+real size is 4016
+extra-memory's size is 0
+curr memory's size is 17608
+p is not NULL
+p's size is 13592
+real size is 2744
+extra-memory's size is 0
+curr memory's size is 13592
+p is not NULL
+p's size is 10848
+real size is 3456
+extra-memory's size is 0
+curr memory's size is 10848
+p is not NULL
+p's size is 7392
+real size is 892
+extra-memory's size is 0
+curr memory's size is 7392
+p is not NULL
+p's size is 6500
+real size is 1692
+extra-memory's size is 0
+curr memory's size is 6500
+p is not NULL
+p's size is 4808
+real size is 1716
+extra-memory's size is 0
+curr memory's size is 4808
+p is not NULL
+p's size is 3092
+real size is 880
+extra-memory's size is 0
+curr memory's size is 3092
+p is not NULL
+p's size is 2212
+real size is 1780
+extra-memory's size is 0
+curr memory's size is 2212
+p is not NULL
+p's size is 432
+real size is 488
+p is not NULL
+p's size is 65536
+real size is 488
+extra-memory's size is 0
+curr memory's size is 65536
+p is not NULL
+p's size is 65048
+real size is 3700
+extra-memory's size is 0
+curr memory's size is 65048
+p is not NULL
+p's size is 61348
+real size is 2484
+extra-memory's size is 0
+curr memory's size is 61348
+p is not NULL
+p's size is 58864
+real size is 3708
+extra-memory's size is 0
+curr memory's size is 58864
+p is not NULL
+p's size is 55156
+real size is 1932
+extra-memory's size is 0
+curr memory's size is 55156
+p is not NULL
+p's size is 53224
+real size is 3640
+extra-memory's size is 0
+curr memory's size is 53224
+p is not NULL
+p's size is 49584
+real size is 3484
+extra-memory's size is 0
+curr memory's size is 49584
+p is not NULL
+p's size is 46100
+real size is 1964
+extra-memory's size is 0
+curr memory's size is 46100
+p is not NULL
+p's size is 44136
+real size is 676
+extra-memory's size is 0
+curr memory's size is 44136
+p is not NULL
+p's size is 43460
+real size is 2444
+extra-memory's size is 0
+curr memory's size 

@@ -1,0 +1,8 @@
+
+HW0
+
+1. Why can I just say \"printf "Hello world"\" in the command line but when in a source file I need to write \"printf("Hello world");\n"?
+2. What is a file descriptor?
+3. What are locks?
+4. What are memory maps?
+5. What is an absolute pathname?

@@ -1,0 +1,51 @@
+
+Name: Mitko Nikolov
+
+System: 
+	CPU: Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz (x2 - 2 core processor)
+	RAM: 8GB DDR3 1600MHz
+	OS: Ubuntu 16.04 LTS running on a virtual machine VMware Fusion 8.5.3
+	    The virtual machine uses two of the four processor cores and 3.7GB of the memory
+	    The host computer’s operating systems is macOS Sierra 10.12.3
+
+Runtimes table:
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+              | Chunk size | System allocator (sum_sys) | HW06 allocator (sum_hw06) | Optimized allocator (sum_opt) |
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Time (in sec) |     1KB    |   0.442 (size immutable)   |        320109.348         |           1062.382            |
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+              |    64KB    |            0.442           |           5.724           |             0.228             |
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+              |   1024KB   |            0.442           |           0.302           |             0.193             |
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+
+As we can see from the data, the allocator programs for hw06(sum_hw06) and hw07(sum_opt) get faster
+as we go from chunk size of 1KB to 1024KB. Increasing the chunk size clearly speeds up both of the programs.
+The reason they are significantly slower for 1KB chunk sizes is that they have to use mmap to request
+a new chunk a lot more often than for bigger chunk sizes.
+
+On a high level the algorithm in hw06 specifically for the cases shown in the table above is the following:
+	1. Memory (less than the chunk size) is requested.
+	2. If the list of available memory cells is empty, a chunk of memory is requested and set up as the only available cell on the list.
+	3. The first fitting cell on the free memory list is broken down so that the requested memory can be provided to the user. 	
+	   In this way the memory available on the free list decreases.
+	4. Go back to step 1.
+"./sum_hw06 1000000" continuously requests small amounts of memory and the program repeats steps 1, 2, 3, and 4.
+However, when the chunk size is small (1KB), on step 2. Because the available memory on the free list is exhausted a lot faster for chunks sized 1KB than for 64KB, memory chunks have to be requested more often. Every time we request a memory chunk, we get a pointer to some address in memory. However, after we break down all these memory chunks into smaller pieces of memory, we are asked to free them - essentially to put them back together in order in a free list. This becomes complicated when we have requested memory chunks from the operating system many times and thus our different allocations can have very different addresses. Because our allocations’ addresses are very different, inserting in sorted by address order into the free list requires traversing the list and thus slows us down.
+
+My optimized allocator starts with an empty stack which only gets filled when memory of size = (CELL_SIZE + SIZE_FIELD_SIZE) (in the case above = 24B) is freed. Therefore, before any memory gets freed, my optimized allocator relies on the hw06 allocator. That said, once memory is being freed, the stack gets populated with small equal memory chunks. 
+After that, when small amounts of memory are requested, my optimized allocator returns by popping from the stack. Besides from pushing and popping the stack in constant time, my optimized allocator does not have to partition extra memory or deal with freeing memory chunks into a sorted by addresses free list. 
+As a result, the optimized allocator is faster than the hw06 allocator for 1KB and 64KB chunk sizes. 
+Essentially, when the stack is empty, the optimized allocator requests memory from the hw06 allocator, but when the memory needs to be freed the optimized allocator takes care of this in constant time. In this way the hw06 allocator does not have to free which can potentially be time-consuming and the stack of the optimized allocator gets populated.
+Because the optimized allocator relies on hw06 however, as we decrease the CHUNK_SIZE variable and the hw06 allocator functions slower, the optimized allocator is affected too.
+
+When the variable CHUNK_SIZE is set to 1024KB (1048576B), the hw06 allocator becomes faster than the system allocator. The reason for that is the number of mmap calls decreases. The system is not faster because there are less mmap calls per se, but because the smaller number of mmap calls enable a faster insertion into the free list and faster coalescing.
+In general, when we mmap we get a chunk of memory chunk1 from the operating system. We start using this chunk until, it has finished and we need more memory. Then we make a new mmap request and get a new chunk memory called chunk2. But chunk2’s address is likely to be very different from chunk1’s address. So we have continuously broken down chunk1 and chunk2 into multiple small chunks. Then we are asked to free them and when we do that, we order them by addresses. Therefore, we need to traverse the whole free list in order to find the right place for the cell that we are asked to free. In this way inserting back into the free list becomes more and more complicated and time-consuming as we increase the number of requested chunks.
+Smaller CHUNK_SIZE leads to bigger number of requests and more complicated insertion into the free list, whereas bigger CHUNK_SIZE leads to small number of mmap requests and thus the hw06 allocator becomes very fast.
+
+
+
+
+
+
